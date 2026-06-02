@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Regiões</title>
+
+    <link rel="stylesheet"
+          href="css/styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <h2>LOGISTICS</h2>
+
+        <nav>
+
+            <a href="index.html">
+                Dashboard
+            </a>
+
+            <a href="custos.html">
+                Custos
+            </a>
+
+            <a href="veiculos.html">
+                Veículos
+            </a>
+
+            <a href="regioes.html" class="active">
+                Regiões
+            </a>
+
+            <a href="simulador.html">
+                Simulador
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <main class="container">
+
+        <header>
+
+            <h1>Análise Regional</h1>
+
+            <p>
+                Comparativo de custos entre regiões
+            </p>
+
+        </header>
+
+        <section class="chart-card">
+
+            <h3>
+                Custo Médio por Região
+            </h3>
+
+            <canvas id="regioesChart"></canvas>
+
+        </section>
+
+        <section class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Ranking
+                        </th>
+
+                        <th>
+                            Região
+                        </th>
+
+                        <th>
+                            Custo Médio
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="ranking-regioes">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <script src="js/regioes.js"></script>
+
+</body>
+
+</html>

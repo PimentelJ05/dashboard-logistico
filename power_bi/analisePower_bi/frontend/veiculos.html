@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Veículos</title>
+
+    <link rel="stylesheet"
+          href="css/styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <h2>LOGISTICS</h2>
+
+        <nav>
+
+            <a href="index.html">
+                Dashboard
+            </a>
+
+            <a href="custos.html">
+                Custos
+            </a>
+
+            <a href="veiculos.html" class="active">
+                Veículos
+            </a>
+
+            <a href="regioes.html">
+                Regiões
+            </a>
+
+            <a href="simulador.html">
+                Simulador
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <main class="container">
+
+        <header>
+
+            <h1>Análise de Veículos</h1>
+
+            <p>
+                Comparativo de custos por categoria
+            </p>
+
+        </header>
+
+        <section class="cards">
+
+            <div class="card">
+
+                <span>Total Veículos</span>
+
+                <h2 id="total-veiculos">
+                    0
+                </h2>
+
+            </div>
+
+            <div class="card">
+
+                <span>Veículo Mais Caro</span>
+
+                <h2 id="mais-caro">
+                    -
+                </h2>
+
+            </div>
+
+            <div class="card">
+
+                <span>Veículo Mais Barato</span>
+
+                <h2 id="mais-barato">
+                    -
+                </h2>
+
+            </div>
+
+        </section>
+
+        <section class="chart-card">
+
+            <h3>
+                Custo Médio por Veículo
+            </h3>
+
+            <canvas id="veiculoChart"></canvas>
+
+        </section>
+
+    </main>
+
+    <script src="js/veiculos.js"></script>
+
+</body>
+
+</html>

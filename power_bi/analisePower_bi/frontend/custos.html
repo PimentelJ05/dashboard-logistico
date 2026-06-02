@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Custos</title>
+
+    <link rel="stylesheet"
+          href="css/styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <h2>LOGISTICS</h2>
+
+        <nav>
+
+            <a href="index.html">
+                Dashboard
+            </a>
+
+            <a href="custos.html" class="active">
+                Custos
+            </a>
+
+            <a href="veiculos.html">
+                Veículos
+            </a>
+
+            <a href="regioes.html">
+                Regiões
+            </a>
+
+            <a href="simulador.html">
+                Simulador
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <main class="container">
+
+        <header>
+
+            <h1>Análise de Custos</h1>
+
+            <p>
+                Indicadores financeiros e tarifários
+            </p>
+
+        </header>
+
+        <section class="cards">
+
+            <div class="card">
+
+                <span>Maior Tarifa</span>
+
+                <h2 id="maior-tarifa">
+                    R$ 0
+                </h2>
+
+            </div>
+
+            <div class="card">
+
+                <span>Menor Tarifa</span>
+
+                <h2 id="menor-tarifa">
+                    R$ 0
+                </h2>
+
+            </div>
+
+            <div class="card">
+
+                <span>Tarifa Média</span>
+
+                <h2 id="tarifa-media">
+                    R$ 0
+                </h2>
+
+            </div>
+
+            <div class="card">
+
+                <span>Amplitude Tarifária</span>
+
+                <h2 id="amplitude">
+                    R$ 0
+                </h2>
+
+            </div>
+
+        </section>
+
+        <section class="chart-card">
+
+            <h3>
+                Evolução do Custo por Faixa de KM
+            </h3>
+
+            <canvas id="evolucaoChart"></canvas>
+
+        </section>
+
+    </main>
+
+    <script src="js/custos.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Simulador</title>
+
+    <link rel="stylesheet"
+          href="css/styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <h2>LOGISTICS</h2>
+
+        <nav>
+
+            <a href="index.html">
+                Dashboard
+            </a>
+
+            <a href="custos.html">
+                Custos
+            </a>
+
+            <a href="veiculos.html">
+                Veículos
+            </a>
+
+            <a href="regioes.html">
+                Regiões
+            </a>
+
+            <a href="simulador.html" class="active">
+                Simulador
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <main class="container">
+
+        <header>
+
+            <h1>Simulador Logístico</h1>
+
+            <p>
+                Relação entre distância e custo
+            </p>
+
+        </header>
+
+        <section class="cards">
+
+            <div class="card">
+
+                <span>KM Máximo</span>
+
+                <h2 id="km-max">
+                    0
+                </h2>
+
+            </div>
+
+            <div class="card">
+
+                <span>KM Mínimo</span>
+
+                <h2 id="km-min">
+                    0
+                </h2>
+
+            </div>
+
+            <div class="card">
+
+                <span>KM Médio</span>
+
+                <h2 id="km-medio">
+                    0
+                </h2>
+
+            </div>
+
+        </section>
+
+        <section class="chart-card">
+
+            <h3>
+                Relação KM x Custo
+            </h3>
+
+            <canvas id="scatterChart"></canvas>
+
+        </section>
+
+    </main>
+
+    <script src="js/simulador.js"></script>
+
+</body>
+
+</html>

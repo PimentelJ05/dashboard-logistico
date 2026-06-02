@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Executivo</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <h2>LOGISTICS</h2>
+
+        <nav>
+
+            <a href="index.html" class="active">
+                Dashboard
+            </a>
+
+            <a href="custos.html">
+                Custos
+            </a>
+
+            <a href="veiculos.html">
+                Veículos
+            </a>
+
+            <a href="regioes.html">
+                Regiões
+            </a>
+
+            <a href="operacoes.html">
+                Operações
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <main class="container">
+
+        <header>
+
+            <h1>Dashboard Executivo</h1>
+
+            <p>
+                Visão geral das operações logísticas
+            </p>
+
+        </header>
+
+        <section class="cards">
+
+            <div class="card">
+                <span>Total de Regiões</span>
+                <h2 id="total-regioes">0</h2>
+            </div>
+
+            <div class="card">
+                <span>Total de Zonas</span>
+                <h2 id="total-zonas">0</h2>
+            </div>
+
+            <div class="card">
+                <span>Total de Veículos</span>
+                <h2 id="total-veiculos">0</h2>
+            </div>
+
+            <div class="card">
+                <span>Custo Médio</span>
+                <h2 id="custo-medio">R$ 0</h2>
+            </div>
+
+        </section>
+
+        <section class="grid-2">
+
+            <div class="chart-card">
+
+                <h3>Custo Médio por Região</h3>
+
+                <canvas id="regiaoChart"></canvas>
+
+            </div>
+
+            <div class="chart-card">
+
+                <h3>Custo Médio por Veículo</h3>
+
+                <canvas id="veiculoChart"></canvas>
+
+            </div>
+
+        </section>
+
+        <section class="table-card">
+
+            <h3>Ranking de Regiões</h3>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>#</th>
+                        <th>Região</th>
+                        <th>Custo Médio</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="ranking-regioes">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
